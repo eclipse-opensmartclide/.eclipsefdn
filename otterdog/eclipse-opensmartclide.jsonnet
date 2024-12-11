@@ -436,7 +436,7 @@ orgs.newOrg('eclipse-opensmartclide') {
       },
       secrets: [
         orgs.newRepoSecret('GITLAB_DEV_SMARTCLIDE_EU_API_TOKEN') {
-          value: "********",
+          value: "pass:bots/ecd.opensmartclide/github.com/GITLAB_DEV_SMARTCLIDE_EU_API_TOKEN",
         },
       ],
       branch_protection_rules: [
