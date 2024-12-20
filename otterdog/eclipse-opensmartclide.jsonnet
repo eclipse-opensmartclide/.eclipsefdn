@@ -1,6 +1,6 @@
 local orgs = import 'vendor/otterdog-defaults/otterdog-defaults.libsonnet';
 
-orgs.newOrg('eclipse-opensmartclide') {
+orgs.newOrg('ecd.opensmartclide', 'eclipse-opensmartclide') {
   settings+: {
     description: "",
     name: "Eclipse OpenSmartCLIDE",
