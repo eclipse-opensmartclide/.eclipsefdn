@@ -4,9 +4,6 @@ orgs.newOrg('ecd.opensmartclide', 'eclipse-opensmartclide') {
   settings+: {
     description: "",
     name: "Eclipse OpenSmartCLIDE",
-    security_managers+: [
-      "ecd-opensmartclide-project-leads"
-    ],
     web_commit_signoff_required: false,
     workflows+: {
       actions_can_approve_pull_request_reviews: false,
