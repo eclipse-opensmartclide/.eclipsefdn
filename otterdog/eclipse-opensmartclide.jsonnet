@@ -12,19 +12,19 @@ orgs.newOrg('ecd.opensmartclide', 'eclipse-opensmartclide') {
   },
   secrets+: [
     orgs.newOrgSecret('ORG_GPG_PASSPHRASE') {
-      value: "********",
+      value: "pass:bots/ecd.opensmartclide/gpg/passphrase",
       visibility: "private",
     },
     orgs.newOrgSecret('ORG_GPG_PRIVATE_KEY') {
-      value: "********",
+      value: "pass:bots/ecd.opensmartclide/gpg/secret-subkeys.asc",
       visibility: "private",
     },
-    orgs.newOrgSecret('ORG_OSSRH_PASSWORD') {
-      value: "********",
+    orgs.newOrgSecret('CENTRAL_SONATYPE_TOKEN_PASSWORD') {
+      value: "pass:bots/ecd.opensmartclide/central.sonatype.org/token-password",
       visibility: "private",
     },
-    orgs.newOrgSecret('ORG_OSSRH_USERNAME') {
-      value: "********",
+    orgs.newOrgSecret('CENTRAL_SONATYPE_TOKEN_USERNAME') {
+      value: "pass:bots/ecd.opensmartclide/central.sonatype.org/token-password",
       visibility: "private",
     },
   ],
@@ -101,9 +101,7 @@ orgs.newOrg('ecd.opensmartclide', 'eclipse-opensmartclide') {
       allow_merge_commit: true,
       allow_update_branch: false,
       code_scanning_default_languages+: [
-        "javascript",
-        "javascript-typescript",
-        "typescript"
+        "javascript-typescript"
       ],
       code_scanning_default_setup_enabled: true,
       delete_branch_on_merge: false,
@@ -481,9 +479,7 @@ orgs.newOrg('ecd.opensmartclide', 'eclipse-opensmartclide') {
     },
     orgs.newRepo('smartclide-deployment-extension') {
       code_scanning_default_languages+: [
-        "javascript",
-        "javascript-typescript",
-        "typescript"
+        "javascript-typescript"
       ],
       code_scanning_default_setup_enabled: true,
       dependabot_security_updates_enabled: true,
@@ -527,9 +523,7 @@ orgs.newOrg('ecd.opensmartclide', 'eclipse-opensmartclide') {
     },
     orgs.newRepo('smartclide-deployment-interpreter-theia') {
       code_scanning_default_languages+: [
-        "javascript",
-        "javascript-typescript",
-        "typescript"
+        "javascript-typescript"
       ],
       code_scanning_default_setup_enabled: true,
       dependabot_security_updates_enabled: true,
@@ -578,9 +572,7 @@ orgs.newOrg('ecd.opensmartclide', 'eclipse-opensmartclide') {
     },
     orgs.newRepo('smartclide-design-pattern-selection-theia') {
       code_scanning_default_languages+: [
-        "javascript",
-        "javascript-typescript",
-        "typescript"
+        "javascript-typescript"
       ],
       code_scanning_default_setup_enabled: true,
       dependabot_security_updates_enabled: true,
@@ -677,9 +669,7 @@ orgs.newOrg('ecd.opensmartclide', 'eclipse-opensmartclide') {
     },
     orgs.newRepo('smartclide-frontend-comm') {
       code_scanning_default_languages+: [
-        "javascript",
-        "javascript-typescript",
-        "typescript"
+        "javascript-typescript"
       ],
       code_scanning_default_setup_enabled: true,
       dependabot_security_updates_enabled: true,
@@ -703,9 +693,7 @@ orgs.newOrg('ecd.opensmartclide', 'eclipse-opensmartclide') {
     },
     orgs.newRepo('smartclide-ide-front-end') {
       code_scanning_default_languages+: [
-        "javascript",
-        "javascript-typescript",
-        "typescript"
+        "javascript-typescript"
       ],
       code_scanning_default_setup_enabled: true,
       dependabot_security_updates_enabled: true,
@@ -870,9 +858,7 @@ orgs.newOrg('ecd.opensmartclide', 'eclipse-opensmartclide') {
     },
     orgs.newRepo('smartclide-service-creation-theia') {
       code_scanning_default_languages+: [
-        "javascript",
-        "javascript-typescript",
-        "typescript"
+        "javascript-typescript"
       ],
       code_scanning_default_setup_enabled: true,
       dependabot_security_updates_enabled: true,
@@ -916,9 +902,7 @@ orgs.newOrg('ecd.opensmartclide', 'eclipse-opensmartclide') {
     },
     orgs.newRepo('smartclide-service-registry-poc') {
       code_scanning_default_languages+: [
-        "javascript",
-        "javascript-typescript",
-        "typescript"
+        "javascript-typescript"
       ],
       code_scanning_default_setup_enabled: true,
       dependabot_security_updates_enabled: true,
@@ -979,9 +963,7 @@ orgs.newOrg('ecd.opensmartclide', 'eclipse-opensmartclide') {
     },
     orgs.newRepo('smartclide-td-reusability-theia') {
       code_scanning_default_languages+: [
-        "javascript",
-        "javascript-typescript",
-        "typescript"
+        "javascript-typescript"
       ],
       code_scanning_default_setup_enabled: true,
       dependabot_security_updates_enabled: true,
